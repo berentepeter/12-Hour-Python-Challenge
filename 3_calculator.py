@@ -7,9 +7,9 @@ def calculator(num1: float, num2: float, operation: str) -> float:
         print('Invalid operation! Please use the following operations: +, -, *, /');
         return None;
     elif operation == '/' and num2 == 0:
-        print('Invalid operation! Cannot divide by zero.');
+        print('Invalid operation! Cannot divide by zero');
         return None;
-    if operation == '+':
+    elif operation == '+':
         return num1 + num2;
     elif operation == '-':
         return num1 - num2;
@@ -17,3 +17,4 @@ def calculator(num1: float, num2: float, operation: str) -> float:
         return num1 * num2;
     elif operation == '/':
         return num1 / num2;
+
